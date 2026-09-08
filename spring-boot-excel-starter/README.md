@@ -93,31 +93,32 @@ Stream large files in batches (bounded memory):
 
 ```java
 excelTemplate.readInBatch(inputStream, UserExcel.class, batch -> {
-    userRepository.saveAll(batch); // called once per `excel.batch-size` rows
+    userRepository.saveAll(batch); // called once per `twsny.excel.batch-size` rows
 });
 ```
 
 ## Configuration
 
-All properties live under the `excel` prefix and are optional:
+All properties live under the `twsny.excel` prefix and are optional:
 
-| Property                   | Default   | Description                                              |
-|----------------------------|-----------|----------------------------------------------------------|
-| `excel.enabled`            | `true`    | Enable/disable the auto-configuration.                   |
-| `excel.default-sheet-name` | `Sheet1`  | Sheet name used when none is supplied on write.          |
-| `excel.charset`            | `UTF-8`   | Charset for download headers / CSV.                      |
-| `excel.batch-size`         | `1000`    | Rows per batch for `readInBatch`.                        |
-| `excel.auto-close-stream`  | `true`    | Whether EasyExcel closes the underlying stream.          |
-| `excel.head-row-number`    | `1`       | Number of header rows to skip when reading.              |
-| `excel.excel-type`         | `XLSX`    | Default write format: `XLSX`, `XLS`, or `CSV`.           |
+| Property                         | Default   | Description                                              |
+|----------------------------------|-----------|----------------------------------------------------------|
+| `twsny.excel.enabled`            | `true`    | Enable/disable the auto-configuration.                   |
+| `twsny.excel.default-sheet-name` | `Sheet1`  | Sheet name used when none is supplied on write.          |
+| `twsny.excel.charset`            | `UTF-8`   | Charset for download headers / CSV.                      |
+| `twsny.excel.batch-size`         | `1000`    | Rows per batch for `readInBatch`.                        |
+| `twsny.excel.auto-close-stream`  | `true`    | Whether EasyExcel closes the underlying stream.          |
+| `twsny.excel.head-row-number`    | `1`       | Number of header rows to skip when reading.              |
+| `twsny.excel.excel-type`         | `XLSX`    | Default write format: `XLSX`, `XLS`, or `CSV`.           |
 
 Example `application.yml`:
 
 ```yaml
-excel:
-  default-sheet-name: Data
-  batch-size: 500
-  excel-type: XLSX
+twsny:
+  excel:
+    default-sheet-name: Data
+    batch-size: 500
+    excel-type: XLSX
 ```
 
 ## Customization
@@ -137,6 +138,6 @@ public ExcelTemplate excelTemplate(ExcelProperties properties) {
 - `ExcelAutoConfiguration` is registered via
   `META-INF/spring/org.springframework.boot.autoconfigure.AutoConfiguration.imports`.
 - It activates only when EasyExcel is on the classpath (`@ConditionalOnClass`) and
-  `excel.enabled` is not `false`.
+  `twsny.excel.enabled` is not `false`.
 - `HttpServletResponse` support uses a `provided`/`optional` servlet dependency, so
   the starter also works in non-web applications.

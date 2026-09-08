@@ -1,43 +1,43 @@
 {
   "properties": [
     {
-      "name": "excel.enabled",
+      "name": "twsny.excel.enabled",
       "type": "java.lang.Boolean",
       "description": "Whether the Excel auto-configuration is enabled.",
       "defaultValue": true
     },
     {
-      "name": "excel.default-sheet-name",
+      "name": "twsny.excel.default-sheet-name",
       "type": "java.lang.String",
       "description": "Default sheet name used when writing if no explicit name is supplied.",
       "defaultValue": "Sheet1"
     },
     {
-      "name": "excel.charset",
+      "name": "twsny.excel.charset",
       "type": "java.lang.String",
       "description": "Charset used for download headers and CSV handling.",
       "defaultValue": "UTF-8"
     },
     {
-      "name": "excel.batch-size",
+      "name": "twsny.excel.batch-size",
       "type": "java.lang.Integer",
       "description": "Batch size used by the batch read listener when streaming large files.",
       "defaultValue": 1000
     },
     {
-      "name": "excel.auto-close-stream",
+      "name": "twsny.excel.auto-close-stream",
       "type": "java.lang.Boolean",
       "description": "Whether EasyExcel should automatically close the underlying stream after a read/write operation.",
       "defaultValue": true
     },
     {
-      "name": "excel.head-row-number",
+      "name": "twsny.excel.head-row-number",
       "type": "java.lang.Integer",
       "description": "Number of header rows to skip when reading.",
       "defaultValue": 1
     },
     {
-      "name": "excel.excel-type",
+      "name": "twsny.excel.excel-type",
       "type": "cn.twsny.excel.autoconfigure.ExcelProperties$ExcelType",
       "description": "Default file type used when writing (XLSX, XLS or CSV).",
       "defaultValue": "XLSX"

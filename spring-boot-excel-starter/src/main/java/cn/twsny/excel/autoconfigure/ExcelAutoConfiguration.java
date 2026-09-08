@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Bean;
 
 /**
  * Auto-configuration that exposes an {@link ExcelTemplate} bean when EasyExcel is on
- * the classpath and the starter is enabled ({@code excel.enabled=true}, the default).
+ * the classpath and the starter is enabled ({@code twsny.excel.enabled=true}, the default).
  */
 @AutoConfiguration
 @ConditionalOnClass(EasyExcel.class)

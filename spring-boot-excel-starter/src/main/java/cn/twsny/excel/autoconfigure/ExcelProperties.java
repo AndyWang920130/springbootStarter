@@ -7,18 +7,19 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 /**
  * Configuration properties for the Excel starter.
  *
- * <p>All properties are bound under the {@code excel} prefix, e.g.:
+ * <p>All properties are bound under the {@code twsny.excel} prefix, e.g.:
  * <pre>
- * excel:
- *   enabled: true
- *   default-sheet-name: Sheet1
- *   batch-size: 1000
+ * twsny:
+ *   excel:
+ *     enabled: true
+ *     default-sheet-name: Sheet1
+ *     batch-size: 1000
  * </pre>
  */
 @ConfigurationProperties(prefix = ExcelProperties.PREFIX)
 public class ExcelProperties {
 
-    public static final String PREFIX = "excel";
+    public static final String PREFIX = "twsny.excel";
 
     /**
      * Whether the Excel auto-configuration is enabled.

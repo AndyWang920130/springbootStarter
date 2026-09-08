@@ -82,7 +82,7 @@ class ExcelImportExportIntegrationTests {
     @Test
     void batchImportInvokesConsumerPerBatch() {
         // batch-size defaults to 1000; force a smaller size so batching is observable.
-        runner.withPropertyValues("excel.batch-size=2").run(context -> {
+        runner.withPropertyValues("twsny.excel.batch-size=2").run(context -> {
             ExcelTemplate template = context.getBean(ExcelTemplate.class);
             Files.createDirectories(OUTPUT_DIR);
             Path file = OUTPUT_DIR.resolve("batch-users.xlsx");

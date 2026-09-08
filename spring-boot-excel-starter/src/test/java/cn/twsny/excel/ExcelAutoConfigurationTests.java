@@ -27,7 +27,7 @@ class ExcelAutoConfigurationTests {
 
     @Test
     void templateBeanIsDisabledWhenPropertyFalse() {
-        runner.withPropertyValues("excel.enabled=false")
+        runner.withPropertyValues("twsny.excel.enabled=false")
                 .run(context -> assertThat(context).doesNotHaveBean(ExcelTemplate.class));
     }
 
