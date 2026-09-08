@@ -1,4 +1,4 @@
-package com.example.excel.exception;
+package cn.twsny.excel.exception;
 
 /**
  * Runtime exception thrown when an Excel import/export operation fails.

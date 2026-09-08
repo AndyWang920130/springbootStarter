@@ -1,4 +1,4 @@
-package com.example.excel.autoconfigure;
+package cn.twsny.excel.autoconfigure;
 
 import java.nio.charset.StandardCharsets;
 

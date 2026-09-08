@@ -38,7 +38,7 @@
     },
     {
       "name": "excel.excel-type",
-      "type": "com.example.excel.autoconfigure.ExcelProperties$ExcelType",
+      "type": "cn.twsny.excel.autoconfigure.ExcelProperties$ExcelType",
       "description": "Default file type used when writing (XLSX, XLS or CSV).",
       "defaultValue": "XLSX"
     }

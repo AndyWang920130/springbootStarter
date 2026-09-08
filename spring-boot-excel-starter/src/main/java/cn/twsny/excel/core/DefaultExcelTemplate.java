@@ -1,4 +1,4 @@
-package com.example.excel.core;
+package cn.twsny.excel.core;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -11,9 +11,9 @@ import com.alibaba.excel.EasyExcel;
 import com.alibaba.excel.support.ExcelTypeEnum;
 import com.alibaba.excel.write.builder.ExcelWriterBuilder;
 
-import com.example.excel.autoconfigure.ExcelProperties;
-import com.example.excel.exception.ExcelException;
-import com.example.excel.listener.BatchReadListener;
+import cn.twsny.excel.autoconfigure.ExcelProperties;
+import cn.twsny.excel.exception.ExcelException;
+import cn.twsny.excel.listener.BatchReadListener;
 
 import jakarta.servlet.http.HttpServletResponse;
 

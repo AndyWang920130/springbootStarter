@@ -1,4 +1,4 @@
-package com.example.excel;
+package cn.twsny.excel;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -11,8 +11,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 
-import com.example.excel.autoconfigure.ExcelAutoConfiguration;
-import com.example.excel.core.ExcelTemplate;
+import cn.twsny.excel.autoconfigure.ExcelAutoConfiguration;
+import cn.twsny.excel.core.ExcelTemplate;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.autoconfigure.AutoConfigurations;

@@ -1,9 +1,9 @@
-package com.example.excel.autoconfigure;
+package cn.twsny.excel.autoconfigure;
 
 import com.alibaba.excel.EasyExcel;
 
-import com.example.excel.core.DefaultExcelTemplate;
-import com.example.excel.core.ExcelTemplate;
+import cn.twsny.excel.core.DefaultExcelTemplate;
+import cn.twsny.excel.core.ExcelTemplate;
 
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;

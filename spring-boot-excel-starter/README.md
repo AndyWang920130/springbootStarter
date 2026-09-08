@@ -23,7 +23,7 @@ Then depend on it from another Spring Boot project:
 
 ```xml
 <dependency>
-    <groupId>com.example</groupId>
+    <groupId>cn.twsny</groupId>
     <artifactId>excel-spring-boot-starter</artifactId>
     <version>1.0.0</version>
 </dependency>
